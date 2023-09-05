@@ -1,11 +1,13 @@
 package com.alexandria.Alexandria.Library.controller;
 
-import com.alexandria.Alexandria.Library.entities.book.Book;
-import com.alexandria.Alexandria.Library.entities.book.BookList;
-import com.alexandria.Alexandria.Library.entities.book.BookRegister;
-import com.alexandria.Alexandria.Library.entities.book.BookRepository;
+import com.alexandria.Alexandria.Library.entities.book.*;
+import com.alexandria.Alexandria.Library.exceptions.BookNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,5 +27,18 @@ public class BookController {
     @Transactional
     public void bookRegister(@RequestBody BookRegister data) {
         repository.save(new Book(data));
+    }
+
+    @PutMapping
+    @Transactional
+    public ResponseEntity<String> update(@RequestBody @Validated BookUpdate data) {
+        try {
+            var book = repository.getReferenceById(data.id());
+            book.updateData(data);
+            return ResponseEntity.status(HttpStatus.OK).body("Livro atualizado!");
+        } catch (EntityNotFoundException e) {
+            System.out.println("Erro: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Livro não encontrado para o ID fornecido, ID: " + data.id());
+        }
     }
 }

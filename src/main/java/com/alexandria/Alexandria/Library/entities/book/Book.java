@@ -29,4 +29,19 @@ public class Book {
         this.genre = data.genre();
         this.author = data.author();
     }
+
+    public void updateData(BookUpdate data) {
+        if (data.name() != null) {
+            this.name = data.name();
+        }
+        if (data.isbn() != null) {
+            this.isbn = data.isbn();
+        }
+        if (data.genre() != null) {
+            this.genre = data.genre();
+        }
+        if (data.author() != null) {
+            this.author = data.author();
+        }
+    }
 }
