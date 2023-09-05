@@ -1,7 +1,6 @@
 <h1 align="center">Alexandria Library - API</h1>
 
 <p align="center">Essa API serve como cadastro de livros e foi feita para estudos, ela utiliza Spring e dependências como: Lombok, JPA e Flyway</p>
-<img src="https://img.shields.io/badge/version-1.0-blue">
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
