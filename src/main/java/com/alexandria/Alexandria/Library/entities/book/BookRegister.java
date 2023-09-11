@@ -4,6 +4,5 @@ public record BookRegister(
         String name,
         String isbn,
         String genre,
-        String author
-) {
+        String author) {
 }
