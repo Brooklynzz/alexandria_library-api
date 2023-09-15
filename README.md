@@ -11,10 +11,10 @@
 
 <h4 align="center"> </h4>
 	<h3 align="center">Funcionalidades</h3>
-	<p align="center">A API oferece as seguintes funcionalidades:
-	<strong>Inserção de Livros:</strong> Adiciona um novo livro ao banco de dados.
-	<strong>Atualização de Livros:</strong> Permite a atualização das informações de um livro existente.
-	<strong>Remoção de Livros:</strong> Remove um livro do banco de dados.</p>
+	<p align="center">A API oferece as seguintes funcionalidades: <br>
+	<strong>Inserção de Livros:</strong> Adiciona um novo livro ao banco de dados. <br>
+	<strong>Atualização de Livros:</strong> Permite a atualização das informações de um livro existente. <br>
+	<strong>Remoção de Livros:</strong> Remove um livro do banco de dados. <br></p>
 	<p align="center">🚧 Em construção...  🚧</p>
 
 
