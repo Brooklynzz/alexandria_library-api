@@ -10,11 +10,11 @@
 </p>
 
 <h4 align="center"> </h4>
-	<h3>Funcionalidades</h3>
-	<p>A API oferece as seguintes funcionalidades:
+	<h3 align="center">Funcionalidades</h3>
+	<p align="center">A API oferece as seguintes funcionalidades:
 	<strong>Inserção de Livros:</strong> Adiciona um novo livro ao banco de dados.
 	<strong>Atualização de Livros:</strong> Permite a atualização das informações de um livro existente.
 	<strong>Remoção de Livros:</strong> Remove um livro do banco de dados.</p>
-	<p>🚧 Em construção...  🚧</p>
+	<p align="center">🚧 Em construção...  🚧</p>
 
 
